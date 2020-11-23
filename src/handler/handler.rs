@@ -2,7 +2,7 @@ use precision_proto::precision_server::{Precision, PrecisionServer};
 use precision_proto::{CreateStreamRequest, CreateStreamResponse};
 use tonic::{Request, Response, Status};
 
-pub mod precision_proto {
+mod precision_proto {
   tonic::include_proto!("precision");
 }
 
