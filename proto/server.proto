@@ -1,0 +1,15 @@
+syntax = "proto3";
+package precision;
+
+
+message CreateStreamRequest {
+  string sdp_offer = 1;
+}
+
+message CreateStreamResponse {
+
+}
+
+service Precision {
+  rpc CreateStream(CreateStreamRequest) returns (CreateStreamResponse) {}
+}
