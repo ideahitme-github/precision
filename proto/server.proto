@@ -4,11 +4,10 @@ package precision;
 
 message CreateStreamRequest {
   string sdp_offer = 1;
+  string user_id = 2;
 }
 
-message CreateStreamResponse {
-
-}
+message CreateStreamResponse {}
 
 service Precision {
   rpc CreateStream(CreateStreamRequest) returns (CreateStreamResponse) {}
